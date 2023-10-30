@@ -79,10 +79,16 @@ body {
     border-radius: 20px;
     border: #9e582c solid 2.5px;
     color: #9e582c;
-    margin-left: 80px;
+    margin-left: 40px;
     margin-bottom: 45px;
     cursor: pointer;
     outline: none;
+}
+
+#refreshButton:hover{
+    background-color: rgb(156, 92, 28);
+    color: whitesmoke;
+    border: whitesmoke solid 3px;
 }
 
 #Toptext{
