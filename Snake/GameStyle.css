@@ -20,6 +20,19 @@ body {
 
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        /* Adjust styles for smaller screens here */
+    }
+
+    #game-board {
+        /* Adjust styles for smaller screens here */
+    }
+
+    /* Your existing styles... */
+}
+
 .snake {
     background-image: url('./Images/snakeTale.png');
     background-size: 35px 35px;
