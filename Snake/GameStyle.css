@@ -20,16 +20,18 @@ body {
 
 }
 
-/* Media query for smaller screens */
+    /* Media query for smaller screens */
+/* 
 @media screen and (max-width: 768px) {
     body {
-        /* Adjust styles for smaller screens here */
+        // Adjust styles for smaller screens here 
     }
 
     #game-board {
-        /* Adjust styles for smaller screens here */
+        // Adjust styles for smaller screens here 
     }
-}
+} 
+*/
 
 .snake {
     background-image: url('./Images/snakeTale.png');
