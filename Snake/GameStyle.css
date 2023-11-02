@@ -29,8 +29,6 @@ body {
     #game-board {
         /* Adjust styles for smaller screens here */
     }
-
-    /* Your existing styles... */
 }
 
 .snake {
@@ -119,7 +117,7 @@ select {
 
 #popup{
     width: 400px;
-    height: 100px;
+    height: 400px;
     background-color: rgb(46, 10, 10);
     border-radius: 20px;
     position: absolute;
@@ -127,8 +125,14 @@ select {
     left: 42.3%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding-top: 1%;
+    justify-content: center; 
+    padding: 10%;
     color: red;
     border: red solid 3px;
     visibility: hidden;
+    
+}
+
+#txt{
+    padding-top: 35%;
 }

@@ -1,4 +1,5 @@
 import { getInputDirection } from "./input.js"
+// import { EXPANSION_RATE } from "./food.js"
 
 const diffSelect = document.getElementById('difficulty-select');
 let SNAKE_SPEED = 3;
@@ -16,12 +17,15 @@ diffSelect.onchange = () => {
 function updateSnakeSpeed(difficulty) {
   switch (difficulty) {
     case 'easy':
+      // EXPANSION_RATE = 2
       SNAKE_SPEED = 3;
       break;
     case 'medium':
+      // EXPANSION_RATE = 3
       SNAKE_SPEED = 6;
       break;
     case 'hard':
+      // EXPANSION_RATE = 4
       SNAKE_SPEED = 12;
       break;
   }
