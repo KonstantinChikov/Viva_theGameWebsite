@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="GoodOrBadStyle.css">
+        <title>Игра с благородници и негодници</title>
+    </head>
+
+    <body>
+        <h1>Игра с благородници и негодници</h1>
+
+        <p id="con">   
+            На острова на благородниците и негодниците са верни следните факти:
+            1. Благородникът винаги казва истината.
+            2. Негодникът винаги казва лъжа.
+            3. Всеки жител на острова е или благородник, или негодник.
+            Вие попадате на този остров и срещате трима участници A, B, C 
+        </p>
+
+        <p id="replace-me">Питате A: "Ти благородник ли си или негодник?"</p>
+        
+        <button id="askA" onclick="changeTextOne()">Попитай A</button>
+        <button id="askB" onclick="changeTextTwo()">Попитай B</button>
+        <button id="askC" onclick="changeTextThree()">Попитай C</button>
+        <button id="revealAnswer">Разкрий отговора</button>
+
+        <p id="format">Отговорът трябва да бъде във формат => А - ...; B - ...; C - ...;</p>
+        
+            <div id="try">
+                <label >Вашият отговор:</label>
+                <input 
+                    type="text" 
+                    id="txtField" 
+                    required maxlength="50"
+                    size="55"
+                    placeholder="А - ...; B - ...; C - ...;"
+                >
+                <button onclick="checkString()">Провери</button>
+            </div>
+
+        <p id="result">...</p>
+
+        <script src="GoodOrBad_script.js"></script>
+    </body>
+</html>

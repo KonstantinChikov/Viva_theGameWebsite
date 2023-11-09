@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#try{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#format{
+    margin-top: 5%;
+}
+
+#con{
+    font-size: 18px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+#replace-me{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#txtField{
+    padding: 1% 2% 1% 1%;
+}
