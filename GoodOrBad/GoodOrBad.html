@@ -4,8 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="GoodOrBadStyle.css">
+        <link rel="stylesheet" href="style.css">
         <title>Игра с благородници и негодници</title>
+
+             <!-- Sound effects -->
+            <audio id="correctSound" src="Sounds/Correct.mp3"></audio>
+            <audio id="incorrectSound" src="Sounds/Incorrect.mp3"></audio>
     </head>
 
     <body>
@@ -26,22 +30,44 @@
         <button id="askC" onclick="changeTextThree()">Попитай C</button>
         <button id="revealAnswer">Разкрий отговора</button>
 
-        <p id="format">Отговорът трябва да бъде във формат => А - ...; B - ...; C - ...;</p>
-        
-            <div id="try">
-                <label >Вашият отговор:</label>
-                <input 
-                    type="text" 
-                    id="txtField" 
-                    required maxlength="50"
-                    size="55"
-                    placeholder="А - ...; B - ...; C - ...;"
-                >
-                <button onclick="checkString()">Провери</button>
-            </div>
+        <div id="tryA">
+            <label >Какъв е A:</label>
+            <input 
+                type="text" 
+                id="txtFieldA" 
+                required maxlength="20"
+                size="25"
+            >
+            <button id="check" onclick="checkStringA()">Провери</button>
+            <p id="resultA"></p>
+        </div> 
 
-        <p id="result">...</p>
+        <div id="tryB">
+            <label >Какъв е B:</label>
+            <input 
+                type="text" 
+                id="txtFieldB" 
+                required maxlength="20"
+                size="25"
+            >
+            <button id="check" onclick="checkStringB()">Провери</button>
+            <p id="resultB"></p>
+        </div> 
 
-        <script src="GoodOrBad_script.js"></script>
+        <div id="tryC">
+            <label >Какъв е C:</label>
+            <input 
+                type="text" 
+                id="txtFieldC" 
+                required maxlength="20"
+                size="25"
+            >
+            <button id="check" onclick="checkStringC()">Провери</button>
+            <p id="resultC"></p>
+        </div> 
+
+        <p id="answer">...</p>
+
+        <script src="script.js"></script>
     </body>
 </html>
