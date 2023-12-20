@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusted to evenly distribute the game containers */
+}
+
+.game {
+    width: 200px; /* Set a fixed width for each game container */
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #555;
+}
+
